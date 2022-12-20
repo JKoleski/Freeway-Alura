@@ -8,4 +8,5 @@ function draw() {
   geraCarro();
   movimentaCarro();
   movimentaAtor();
+  retornaPosicaoInicialDoCarro();
 }
