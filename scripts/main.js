@@ -1,5 +1,7 @@
 function setup() {
+  getAudioContext().suspend();
   createCanvas(500, 400);
+  somTrilhaSonora.loop();
 }
 
 function draw() {
@@ -12,4 +14,8 @@ function draw() {
   verificaColisao();
   exibePontos();
   marcaPontos();
+}
+
+function keyPressed(){
+  userStartAudio();
 }

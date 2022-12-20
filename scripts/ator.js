@@ -16,6 +16,9 @@ function verificaColisao(){
         colisao = collideRectCircle(eixoXCarros[i],eixoYCarros[i],comprimentoCarro,alturaCarro,eixoXAtor,eixoYAtor,15);
         if(colisao){
             colidiu();
+            somColisao.play();
+            if(pontuacao>0)
+                pontuacao--;
         }
     }
 }
@@ -35,5 +38,6 @@ function marcaPontos(){
     if(eixoYAtor < 15){
         pontuacao++;
         eixoYAtor=366;
+        somPontuacao.play();
     }
 }
