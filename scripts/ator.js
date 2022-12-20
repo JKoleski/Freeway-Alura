@@ -1,7 +1,7 @@
-let eixoYAtor=366;
+let eixoXAtor=100 ,eixoYAtor=366;
 
 function geraAtor(){
-    image(imagemAtor, 100, eixoYAtor, 30, 30);
+    image(imagemAtor, eixoXAtor, eixoYAtor, 30, 30);
 }
 
 function movimentaAtor(){
