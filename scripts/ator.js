@@ -1,5 +1,4 @@
-let eixoXAtor=100 ,eixoYAtor=366, colisao=false;
-
+let eixoXAtor=85 ,eixoYAtor=366, colisao=false, pontuacao=0;
 function geraAtor(){
     image(imagemAtor, eixoXAtor, eixoYAtor, 30, 30);
 }
@@ -23,4 +22,18 @@ function verificaColisao(){
 
 function colidiu(){
     eixoYAtor=366;
+}
+
+function exibePontos(){
+    textAlign(CENTER);
+    textSize(25);
+    fill(255,240,60);
+    text(pontuacao,width/5+30,27);
+}
+
+function marcaPontos(){
+    if(eixoYAtor < 15){
+        pontuacao++;
+        eixoYAtor=366;
+    }
 }
